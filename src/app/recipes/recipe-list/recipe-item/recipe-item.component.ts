@@ -11,7 +11,7 @@ export class RecipeItemComponent {
  @Input() recipe : Recipe;
 
  ngOnInit(){
-  console.log('abc');
+  console.log('abcdefg');
  }
 
  
