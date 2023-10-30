@@ -8,7 +8,6 @@ import { Recipe } from './recipe.model';
 })
 export class RecipesComponent implements OnInit {
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
   }
 
   selectedRecipe: Recipe;
