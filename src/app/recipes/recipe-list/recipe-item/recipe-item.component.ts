@@ -20,7 +20,7 @@ export class RecipeItemComponent {
 
  }
 
- OnSelected(){
+ onSelected(){
   this.recipeService.recipeSelected.emit(this.recipe);
 
  }
