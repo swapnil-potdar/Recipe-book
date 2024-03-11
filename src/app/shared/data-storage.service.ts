@@ -18,9 +18,9 @@ export class DataStorageService{
     }
 
     fetchRecepies(){
-        this.http.get('https://recipe-book-ab01c-default-rtdb.firebaseio.com/recipe-book.json')
+        this.http.get<Recipe[]>('https://recipe-book-ab01c-default-rtdb.firebaseio.com/recipe-book.json')
         .subscribe(recipes=>{
-            console.log(recipes);
+            this.recipeService.setRecipes(recipes);
         })
 
     }
